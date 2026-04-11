@@ -15,7 +15,7 @@
 <body class="bg-background text-onSurface font-body selection:bg-primary/30" data-page="contact">
   <nav class="fixed top-0 z-50 w-full border-b border-white/5 bg-[#131318]/80 backdrop-blur-xl">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-8 py-5">
-      <a class="font-headline text-2xl font-bold tracking-tighter text-primary" href="./index.html">Space Digital</a>
+      <a class="inline-flex items-center" href="./index.html"><img class="site-logo" src="./assets/logo.png" alt="Space Digital logo" /></a>
       <div class="hidden items-center gap-10 md:flex">
         <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="home" href="./index.html">Home</a>
         <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="services" href="./services.html">Services</a>
@@ -23,9 +23,32 @@
         <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="about" href="./about.html">About</a>
         <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="contact" href="./contact.html">Contact</a>
       </div>
-      <a class="primary-glow-btn rounded-full bg-primary px-7 py-2.5 text-sm font-bold text-[#00382e]" href="./contact.html">Get a Quote</a>
+      <div class="flex items-center gap-3">
+        <a class="primary-glow-btn hidden rounded-full bg-primary px-7 py-2.5 text-sm font-bold text-[#00382e] md:inline-flex" href="./contact.html">Get a Quote</a>
+        <button class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-onSurface md:hidden" type="button" aria-label="Open menu" data-mobile-menu-toggle>
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
     </div>
   </nav>
+
+  <div class="fixed inset-0 z-[60] hidden bg-background/95 backdrop-blur-xl md:hidden" data-mobile-menu>
+    <div class="flex items-center justify-between border-b border-white/5 px-6 py-5">
+      <a class="inline-flex items-center" href="./index.html"><img class="site-logo" src="./assets/logo.png" alt="Space Digital logo" /></a>
+      <button class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-onSurface" type="button" aria-label="Close menu" data-mobile-menu-close>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="flex flex-col gap-3 px-6 py-8">
+      <a class="rounded-2xl bg-surfaceContainerLow px-5 py-4 font-headline text-lg text-onSurface" href="./index.html">Home</a>
+      <a class="rounded-2xl bg-surfaceContainerLow px-5 py-4 font-headline text-lg text-onSurface" href="./services.html">Services</a>
+      <a class="rounded-2xl bg-surfaceContainerLow px-5 py-4 font-headline text-lg text-onSurface" href="./projects.html">Projects</a>
+      <a class="rounded-2xl bg-surfaceContainerLow px-5 py-4 font-headline text-lg text-onSurface" href="./about.html">About</a>
+      <a class="rounded-2xl bg-surfaceContainerLow px-5 py-4 font-headline text-lg text-onSurface" href="./contact.html">Contact</a>
+      <a class="primary-glow-btn mt-4 inline-flex items-center justify-center rounded-full bg-primary px-6 py-4 font-bold text-[#00382e]" href="./contact.html">Get a Quote</a>
+      <a class="inline-flex items-center justify-center rounded-full border border-secondary/20 bg-secondary/10 px-6 py-4 font-bold text-secondary" href="https://wa.me/94721520716" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+    </div>
+  </div>
 
   <main class="connectivity-grid relative min-h-screen overflow-hidden pb-24 pt-32">
     <div class="pointer-events-none absolute right-[-10%] top-[-10%] h-[500px] w-[500px] rounded-full bg-primary/5 blur-[120px]"></div>
@@ -50,10 +73,10 @@
           </div>
         </div>
         <div class="flex flex-col gap-12 lg:col-span-5">
-          <div class="group relative overflow-hidden rounded-xl border border-outlineVariant/5 bg-surfaceContainerLow p-8"><div class="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-secondary/10 blur-3xl group-hover:bg-secondary/20"></div><div class="relative z-10 flex items-start gap-6"><div class="rounded-full bg-secondary/10 p-4 text-secondary"><span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span></div><div><h3 class="mb-2 font-headline text-xl font-bold">Live Response Agent</h3><p class="mb-6 text-sm leading-relaxed text-onSurfaceVariant">Average response time: 2 minutes. Secure, end-to-end encrypted briefing.</p><a class="inline-flex items-center gap-3 font-headline text-sm font-bold uppercase tracking-widest text-secondary hover:translate-x-2" href="#">Message via WhatsApp <span class="material-symbols-outlined text-lg">arrow_forward</span></a></div></div></div>
+          <div class="group relative overflow-hidden rounded-xl border border-outlineVariant/5 bg-surfaceContainerLow p-8"><div class="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-secondary/10 blur-3xl group-hover:bg-secondary/20"></div><div class="relative z-10 flex items-start gap-6"><div class="rounded-full bg-secondary/10 p-4 text-secondary"><span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span></div><div><h3 class="mb-2 font-headline text-xl font-bold">Live Response Agent</h3><p class="mb-6 text-sm leading-relaxed text-onSurfaceVariant">Average response time: 2 minutes. Secure, end-to-end encrypted briefing.</p><a class="inline-flex items-center gap-3 font-headline text-sm font-bold uppercase tracking-widest text-secondary hover:translate-x-2" href="https://wa.me/94721520716" target="_blank" rel="noopener noreferrer">Message via WhatsApp <span class="material-symbols-outlined text-lg">arrow_forward</span></a></div></div></div>
           <div class="flex flex-col gap-8">
-            <div class="flex items-center gap-6"><div class="flex h-12 w-12 items-center justify-center rounded-full border border-outlineVariant/10 bg-surfaceContainerHighest text-primary"><span class="material-symbols-outlined">call</span></div><div><span class="mb-1 block font-headline text-xs font-bold uppercase tracking-widest text-outline">Inquiries</span><p class="font-headline text-xl font-medium">+94 77 555 0123</p></div></div>
-            <div class="flex items-center gap-6"><div class="flex h-12 w-12 items-center justify-center rounded-full border border-outlineVariant/10 bg-surfaceContainerHighest text-primary"><span class="material-symbols-outlined">mail</span></div><div><span class="mb-1 block font-headline text-xs font-bold uppercase tracking-widest text-outline">Liaison</span><p class="font-headline text-xl font-medium">ops@spacedigital.lk</p></div></div>
+            <div class="flex items-center gap-6"><div class="flex h-12 w-12 items-center justify-center rounded-full border border-outlineVariant/10 bg-surfaceContainerHighest text-primary"><span class="material-symbols-outlined">call</span></div><div><span class="mb-1 block font-headline text-xs font-bold uppercase tracking-widest text-outline">Inquiries</span><a class="font-headline text-xl font-medium transition-colors hover:text-primary" href="tel:+94721520716">+94 72 152 0716</a></div></div>
+            <div class="flex items-center gap-6"><div class="flex h-12 w-12 items-center justify-center rounded-full border border-outlineVariant/10 bg-surfaceContainerHighest text-primary"><span class="material-symbols-outlined">mail</span></div><div><span class="mb-1 block font-headline text-xs font-bold uppercase tracking-widest text-outline">Liaison</span><a class="font-headline text-xl font-medium transition-colors hover:text-primary" href="mailto:info@spacedigital.com.lk">info@spacedigital.com.lk</a></div></div>
             <div class="mt-8 border-t border-outlineVariant/10 pt-8"><span class="mb-4 block font-headline text-xs font-bold uppercase tracking-widest text-outline">Operations Center</span><div class="group relative aspect-video overflow-hidden rounded-xl"><img class="h-full w-full object-cover grayscale opacity-50 transition-all duration-700 group-hover:grayscale-0 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5atQhsQd545zU0jCy7Xo5bIrrtoSVxR4tLp2N_5p3VuPR4f7D9h5smAQFyel5zsJ-G_JLn1R4Dud9umqbKQRrQxHbT2Hm_u57V-VfVelFGnnaiV9VUH_mq1qJTxLLb6lag5ft9ql9d7Ks-JsVvJluR2iWCiSz0snmTmSTNr24B1Tqp4Qjp81YWOkFZDovYjSqjomENuLE3sWtM5u2bJQQQB7WyUzoaCHRCIbaSgmsGR4-s5FtlHx4_f7gd5yNwh6shavIhO0sdsnk" alt="Office building at night" /><div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div><div class="absolute bottom-4 left-4"><p class="rounded bg-primary/20 px-3 py-1 font-headline text-xs font-bold uppercase tracking-widest text-primary backdrop-blur-md">Colombo HQ</p></div></div></div>
           </div>
         </div>
@@ -62,11 +85,6 @@
   </main>
 
   <div data-footer></div>
-
-  <nav class="fixed bottom-6 left-6 right-6 z-50 flex items-center justify-around rounded-full border border-white/10 bg-[#131318]/80 p-3 shadow-2xl backdrop-blur-2xl md:hidden">
-    <a class="flex items-center gap-2 rounded-full bg-primary px-8 py-3 text-[#00382e]" href="./contact.html"><span class="material-symbols-outlined text-xl">request_quote</span><span class="text-[10px] font-bold uppercase tracking-widest">Get a Quote</span></a>
-    <a class="flex items-center justify-center px-6 py-3 text-onSurface" href="#"><span class="material-symbols-outlined text-2xl text-secondary">chat</span></a>
-  </nav>
 
   <script src="./script.js"></script>
 </body>

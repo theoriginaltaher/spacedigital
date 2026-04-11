@@ -15,7 +15,7 @@
 <body class="min-h-screen bg-background text-onSurface font-body selection:bg-primary/30" data-page="about">
   <nav class="fixed top-0 z-50 w-full border-b border-white/5 bg-[#0e0e12]/80 backdrop-blur-xl">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-8 py-5">
-      <a class="font-headline text-2xl font-bold tracking-tighter text-primary" href="./index.html">Space Digital</a>
+      <a class="inline-flex items-center" href="./index.html"><img class="site-logo" src="./assets/logo.png" alt="Space Digital logo" /></a>
       <div class="hidden items-center gap-10 md:flex">
         <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="home" href="./index.html">Home</a>
         <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="services" href="./services.html">Services</a>
@@ -23,9 +23,32 @@
         <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="about" href="./about.html">About</a>
         <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="contact" href="./contact.html">Contact</a>
       </div>
-      <a class="primary-glow-btn rounded-full bg-[#009F86] px-7 py-2.5 text-sm font-bold text-white" href="./contact.html">Get a Quote</a>
+      <div class="flex items-center gap-3">
+        <a class="primary-glow-btn hidden rounded-full bg-[#009F86] px-7 py-2.5 text-sm font-bold text-white md:inline-flex" href="./contact.html">Get a Quote</a>
+        <button class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-onSurface md:hidden" type="button" aria-label="Open menu" data-mobile-menu-toggle>
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
     </div>
   </nav>
+
+  <div class="fixed inset-0 z-[60] hidden bg-background/95 backdrop-blur-xl md:hidden" data-mobile-menu>
+    <div class="flex items-center justify-between border-b border-white/5 px-6 py-5">
+      <a class="inline-flex items-center" href="./index.html"><img class="site-logo" src="./assets/logo.png" alt="Space Digital logo" /></a>
+      <button class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-onSurface" type="button" aria-label="Close menu" data-mobile-menu-close>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="flex flex-col gap-3 px-6 py-8">
+      <a class="rounded-2xl bg-surfaceContainerLow px-5 py-4 font-headline text-lg text-onSurface" href="./index.html">Home</a>
+      <a class="rounded-2xl bg-surfaceContainerLow px-5 py-4 font-headline text-lg text-onSurface" href="./services.html">Services</a>
+      <a class="rounded-2xl bg-surfaceContainerLow px-5 py-4 font-headline text-lg text-onSurface" href="./projects.html">Projects</a>
+      <a class="rounded-2xl bg-surfaceContainerLow px-5 py-4 font-headline text-lg text-onSurface" href="./about.html">About</a>
+      <a class="rounded-2xl bg-surfaceContainerLow px-5 py-4 font-headline text-lg text-onSurface" href="./contact.html">Contact</a>
+      <a class="primary-glow-btn mt-4 inline-flex items-center justify-center rounded-full bg-primary px-6 py-4 font-bold text-white" href="./contact.html">Get a Quote</a>
+      <a class="inline-flex items-center justify-center rounded-full border border-secondary/20 bg-secondary/10 px-6 py-4 font-bold text-secondary" href="https://wa.me/94721520716" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+    </div>
+  </div>
 
   <main class="relative overflow-hidden pt-32">
     <div class="connectivity-grid-dots absolute inset-0 pointer-events-none opacity-50"></div>
@@ -81,34 +104,46 @@
 
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
           <article class="team-card glass-panel rounded-[2rem] border border-outlineVariant/10 p-5 transition-all duration-500 hover:border-primary/20 hover:bg-surfaceContainerHigh/20">
-            <div class="team-portrait aspect-[4/5] rounded-[1.5rem]">
-              <img class="team-portrait-muted" src="./assets/person-1-headshot.jpg" alt="Person 1 headshot placeholder" />
-              <img class="team-portrait-color" src="./assets/person-1-headshot.jpg" alt="Person 1 headshot" />
+            <div class="team-portrait aspect-[2/3] rounded-[1.5rem]">
+              <img class="team-portrait-muted" src="./assets/hakbw.png" alt="Hakimuddin Qutbuddin headshot" />
+              <img class="team-portrait-color" src="./assets/hakclr.png" alt="Hakimuddin Qutbuddin headshot in color" />
               <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
-              <div class="absolute left-6 top-6 rounded-full border border-white/10 bg-background/50 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-secondary backdrop-blur-md">Founder</div>
+              <div class="absolute left-6 top-6 rounded-full border border-white/10 bg-background/50 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-secondary backdrop-blur-md">Leadership</div>
             </div>
             <div class="grid gap-6 p-4 pt-8 md:grid-cols-[1.2fr_1fr]">
               <div>
-                <h3 class="font-headline text-3xl font-bold">Person 01</h3>
-                <p class="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-primary">Co-Founder / Network Strategy</p>
+                <h3 class="font-headline text-3xl font-bold">Hakimuddin Qutbuddin</h3>
+                <p class="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-primary">Co-Founder / Strategy &amp; Client Leadership</p>
               </div>
-              <p class="text-sm leading-relaxed text-onSurfaceVariant">Placeholder bio for the first team member. Add a concise line here about leadership, planning, or infrastructure delivery.</p>
+              <div class="space-y-4">
+                <p class="text-sm leading-relaxed text-onSurfaceVariant">Hakimuddin helps shape client relationships, project direction, and the practical strategy behind Space Digital&apos;s infrastructure work.</p>
+                <a class="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-secondary" href="https://www.linkedin.com/in/hakimuddin-qutbuddin-0a869228b/" target="_blank" rel="noopener noreferrer">
+                  View LinkedIn
+                  <span class="material-symbols-outlined text-base">north_east</span>
+                </a>
+              </div>
             </div>
           </article>
 
           <article class="team-card glass-panel rounded-[2rem] border border-outlineVariant/10 p-5 transition-all duration-500 hover:border-primary/20 hover:bg-surfaceContainerHigh/20">
-            <div class="team-portrait aspect-[4/5] rounded-[1.5rem]">
-              <img class="team-portrait-muted" src="./assets/person-2-headshot.jpg" alt="Person 2 headshot placeholder" />
-              <img class="team-portrait-color" src="./assets/person-2-headshot.jpg" alt="Person 2 headshot" />
+            <div class="team-portrait aspect-[2/3] rounded-[1.5rem]">
+              <img class="team-portrait-muted" src="./assets/thbw.png" alt="Taher Hussain headshot" />
+              <img class="team-portrait-color" src="./assets/thclr.png" alt="Taher Hussain headshot in color" />
               <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
-              <div class="absolute left-6 top-6 rounded-full border border-white/10 bg-background/50 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-secondary backdrop-blur-md">Operations</div>
+              <div class="absolute left-6 top-6 rounded-full border border-white/10 bg-background/50 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-secondary backdrop-blur-md">Execution</div>
             </div>
             <div class="grid gap-6 p-4 pt-8 md:grid-cols-[1.2fr_1fr]">
               <div>
-                <h3 class="font-headline text-3xl font-bold">Person 02</h3>
-                <p class="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-primary">Co-Founder / Delivery &amp; Support</p>
+                <h3 class="font-headline text-3xl font-bold">Taher Hussain</h3>
+                <p class="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-primary">Co-Founder / Delivery, Creative &amp; Operations</p>
               </div>
-              <p class="text-sm leading-relaxed text-onSurfaceVariant">Placeholder bio for the second team member. Add a short description about installs, optimization, support, or client delivery.</p>
+              <div class="space-y-4">
+                <p class="text-sm leading-relaxed text-onSurfaceVariant">Taher drives execution across design, delivery, and day-to-day operations, helping projects stay sharp, consistent, and client-ready.</p>
+                <a class="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-secondary" href="https://linkedin.com/in/taher-hussain" target="_blank" rel="noopener noreferrer">
+                  View LinkedIn
+                  <span class="material-symbols-outlined text-base">north_east</span>
+                </a>
+              </div>
             </div>
           </article>
         </div>
@@ -117,11 +152,6 @@
   </main>
 
   <div data-footer></div>
-
-  <nav class="fixed bottom-6 left-6 right-6 z-50 flex items-center justify-around rounded-full border border-white/10 bg-[#0e0e12]/80 p-3 shadow-2xl backdrop-blur-2xl md:hidden">
-    <a class="flex items-center gap-2 rounded-full bg-primary px-8 py-3 text-white" href="./contact.html"><span class="material-symbols-outlined text-xl">request_quote</span><span class="text-[10px] font-bold uppercase tracking-widest">Get a Quote</span></a>
-    <a class="flex items-center justify-center px-6 py-3 text-onSurface" href="./contact.html"><span class="material-symbols-outlined text-2xl text-secondary">chat</span></a>
-  </nav>
 
   <script src="./script.js"></script>
 </body>

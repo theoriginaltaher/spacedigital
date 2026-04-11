@@ -1,7 +1,9 @@
-Drop your files in this folder using these names:
+Current files expected by the site:
 
-- `person-1-headshot.jpg`
-- `person-2-headshot.jpg`
+- `hakbw.png`
+- `hakclr.png`
+- `thbw.png`
+- `thclr.png`
 - `logo.png`
 
 Recommended:

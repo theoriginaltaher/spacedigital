@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Digital | Projects &amp; Case Studies</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+  <script>
+    tailwind.config = { darkMode: "class", theme: { extend: { colors: { background: "#0e0e12", primary: "#009F86", secondary: "#85EE2F", onSurface: "#e4e1e9", onSurfaceVariant: "#bccac4", surfaceContainerLow: "#1b1b20", surfaceContainerLowest: "#0e0e13", surfaceContainerHigh: "#2a292f", outlineVariant: "#3d4945" }, fontFamily: { headline: ["Space Grotesk"], body: ["Inter"] } } } };
+  </script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="bg-background text-onSurface font-body antialiased selection:bg-primary/30" data-page="projects">
+  <nav class="fixed top-0 z-50 w-full border-b border-white/5 bg-[#0e0e12]/80 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-8 py-5">
+      <a class="font-headline text-2xl font-bold tracking-tighter text-primary" href="./index.html">Space Digital</a>
+      <div class="hidden items-center gap-10 md:flex">
+        <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="home" href="./index.html">Home</a>
+        <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="services" href="./services.html">Services</a>
+        <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="projects" href="./projects.html">Projects</a>
+        <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="about" href="./about.html">About</a>
+        <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="contact" href="./contact.html">Contact</a>
+      </div>
+      <a class="primary-glow-btn rounded-full bg-primary px-7 py-2.5 text-sm font-bold text-white" href="./contact.html">Get a Quote</a>
+    </div>
+  </nav>
+
+  <header class="relative overflow-hidden px-8 pb-20 pt-40">
+    <div class="pointer-events-none absolute left-1/2 top-0 h-[500px] w-full -translate-x-1/2 opacity-20"><div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary via-transparent to-transparent"></div></div>
+    <div class="relative z-10 mx-auto max-w-7xl">
+      <span class="rounded-full border border-outlineVariant/20 bg-surfaceContainerHigh px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-secondary">Portfolio 2024</span>
+      <h1 class="text-glow mt-4 font-headline text-6xl font-bold leading-none tracking-tighter md:text-8xl">Projects &amp; <br /><span class="text-primary">Case Studies</span></h1>
+      <p class="mt-6 max-w-2xl text-lg leading-relaxed text-onSurfaceVariant">Deploying the invisible backbone of modern enterprise. From hospitality hubs to critical mission centers, we engineer the connectivity that powers industry.</p>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-8 pb-32">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="group relative flex flex-col overflow-hidden rounded-xl bg-surfaceContainerLow hover:bg-surfaceContainerHigh"><div class="aspect-[4/5] overflow-hidden"><img class="h-full w-full object-cover grayscale transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6vUh2lklaTQupav-ioEHUYcsWCW62zF0jeCyO9Z4N1IScYU0WWpQrXUp_tMSb61i-g7tQsjrJVn1A6FevL7h1oINw475ZXWKN0Ll0INLVLo4xUtzZtPtQwE5FW4Xl--OC6W7gi2GkqDAQIshr9J1Y9B-zm5OK7UxUEyiR3Txcic97xAfC-XV1iyHWABiqacfoHdimQynzXgbiskj1kzErQoBBKKk9sFbxrRWeZcXFF8vbzJSEoyTTogj0cUKOzyIdl6xqTSIUXz4C" alt="Cafe interior" /></div><div class="flex flex-grow flex-col p-8"><div class="mb-6 flex items-start justify-between"><span class="text-[10px] font-bold uppercase tracking-widest text-secondary">Client: Hospitality</span><span class="material-symbols-outlined text-xl text-primary">coffee</span></div><h3 class="mb-4 font-headline text-2xl font-bold">The Artisan Grind</h3><div class="mt-auto space-y-6"><div><p class="mb-1 text-[10px] font-bold uppercase tracking-widest text-onSurfaceVariant">Problem</p><p class="text-sm text-onSurface/80">Inconsistent coverage across two floors during peak remote-work hours.</p></div><div><p class="mb-1 text-[10px] font-bold uppercase tracking-widest text-onSurfaceVariant">Solution</p><p class="text-sm text-onSurface/80">A high-density mesh network with adaptive beamforming and a dedicated guest portal.</p></div><div class="border-t border-outlineVariant/10 pt-6"><p class="mb-1 text-[10px] font-bold uppercase tracking-widest text-primary">Result</p><p class="font-headline text-lg font-bold text-primary">Eliminated dead zones and improved speed across the entire space by 400%.</p></div></div></div></div>
+      <div class="group relative flex flex-col overflow-hidden rounded-xl bg-surfaceContainerLow hover:bg-surfaceContainerHigh md:mt-12"><div class="aspect-[4/5] overflow-hidden"><img class="h-full w-full object-cover grayscale transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv8cuDZAA901V9o2rnWMNOxg_nBC_rSSgBgzMhG-8R0N9I5rxneQi-YErWo1PJLAjXtsTwEa_TywAZpg4SDKFzpcCRebM4M-tu-eGjDMW6fvdJVvKQcx-Y6aT9lwK5VaCLVFmrYx8_d_L-zxLBlQ9rPwAQGHOSJDlc9DkaZkl15DlO1v0Ao19NrTFtvCrXZH4UdFcYAiCeldyLCXWUa0vEfF9ZTcX8xzyOTjgT3wDgCHZJSAiI_t5hH7BCBa2NEOzP9vbADS7cM15n" alt="Corporate office" /></div><div class="flex flex-grow flex-col p-8"><div class="mb-6 flex items-start justify-between"><span class="text-[10px] font-bold uppercase tracking-widest text-secondary">Client: Corporate HQ</span><span class="material-symbols-outlined text-xl text-primary">corporate_fare</span></div><h3 class="mb-4 font-headline text-2xl font-bold">Nexus Synergy Labs</h3><div class="mt-auto space-y-6"><div><p class="mb-1 text-[10px] font-bold uppercase tracking-widest text-onSurfaceVariant">Problem</p><p class="text-sm text-onSurface/80">Legacy infrastructure failing to support conferencing for 200+ concurrent users.</p></div><div><p class="mb-1 text-[10px] font-bold uppercase tracking-widest text-onSurfaceVariant">Solution</p><p class="text-sm text-onSurface/80">Fiber backbone upgrades with multi-gigabit access points and low-latency switching.</p></div><div class="border-t border-outlineVariant/10 pt-6"><p class="mb-1 text-[10px] font-bold uppercase tracking-widest text-primary">Result</p><p class="font-headline text-lg font-bold text-primary">Zero-latency communication and 99.99% uptime during global summits.</p></div></div></div></div>
+      <div class="group relative flex flex-col overflow-hidden rounded-xl bg-surfaceContainerLow hover:bg-surfaceContainerHigh"><div class="aspect-[4/5] overflow-hidden"><img class="h-full w-full object-cover grayscale transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMFEifb2HUD6Q2MpVaH03ewPIVZjNRH5tws0lr_qdfJk2JOCF9Ui5C1mNh7pN55QSBezt4CaFbAhPQ4BFYjUYIQ9s3nLUwv7eamWZLVgngQc_LJYXYPU6iwVXYo1PJoJuoGhLfKF7iMf67iK5DPb3d09T7Ys82JvQyR7nBoC0DPkAIxf_pf4wVbOVpMwqCeony8BiawhCBHlSs5nWS-rs9pbWE4yMfEnNSNH47DKxLyrP-8o8GE_B4R5-wS80JNwRP3BYMFQt_Irq3" alt="Conference hall" /></div><div class="flex flex-grow flex-col p-8"><div class="mb-6 flex items-start justify-between"><span class="text-[10px] font-bold uppercase tracking-widest text-secondary">Client: Live Events</span><span class="material-symbols-outlined text-xl text-primary">festival</span></div><h3 class="mb-4 font-headline text-2xl font-bold">Quantum Expo 2024</h3><div class="mt-auto space-y-6"><div><p class="mb-1 text-[10px] font-bold uppercase tracking-widest text-onSurfaceVariant">Problem</p><p class="text-sm text-onSurface/80">Temporary, high-capacity WiFi for 5,000 attendees in a stadium environment.</p></div><div><p class="mb-1 text-[10px] font-bold uppercase tracking-widest text-onSurfaceVariant">Solution</p><p class="text-sm text-onSurface/80">Rapid-response infrastructure using satellite backhaul and high-density beamforming.</p></div><div class="border-t border-outlineVariant/10 pt-6"><p class="mb-1 text-[10px] font-bold uppercase tracking-widest text-primary">Result</p><p class="font-headline text-lg font-bold text-primary">4.2TB of data transferred over 48 hours without failure.</p></div></div></div></div>
+    </div>
+
+    <section class="mt-40 grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
+      <div class="lg:col-span-7">
+        <h2 class="mb-8 font-headline text-5xl font-bold leading-tight tracking-tighter">Engineering <br />the <span class="text-secondary">Next Standard</span></h2>
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+          <div class="rounded-xl border border-outlineVariant/10 bg-surfaceContainerLowest p-8"><div class="mb-2 font-headline text-4xl font-bold text-primary">500+</div><p class="text-sm font-bold uppercase tracking-widest text-onSurfaceVariant">Infrastructures Managed</p><p class="mt-4 text-sm leading-relaxed text-onSurface/60">From local boutique spaces to multinational logistics hubs.</p></div>
+          <div class="rounded-xl border border-outlineVariant/10 bg-surfaceContainerLowest p-8"><div class="mb-2 font-headline text-4xl font-bold text-primary">99.9%</div><p class="text-sm font-bold uppercase tracking-widest text-onSurfaceVariant">Guaranteed Uptime</p><p class="mt-4 text-sm leading-relaxed text-onSurface/60">Our redundant systems ensure your business never stops moving.</p></div>
+        </div>
+      </div>
+      <div class="relative lg:col-span-5"><div class="relative flex aspect-square items-center justify-center overflow-hidden rounded-full border border-primary/10 bg-surfaceContainerHigh"><div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent"></div><div class="relative z-10 px-12 text-center"><span class="material-symbols-outlined mb-4 text-6xl text-primary" style="font-variation-settings: 'FILL' 1;">insights</span><p class="font-headline text-xl font-bold italic text-onSurface">"Space Digital transformed our operational capacity. We no longer think about the network. It just works."</p><p class="mt-6 text-[10px] font-bold uppercase tracking-widest text-onSurfaceVariant">Marcus Vane, CTO at Synergy Labs</p></div></div></div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <nav class="fixed bottom-6 left-6 right-6 z-50 flex items-center justify-around rounded-full border border-white/10 bg-[#0e0e12]/80 p-3 shadow-2xl backdrop-blur-2xl md:hidden">
+    <a class="flex items-center gap-2 rounded-full bg-primary px-8 py-3 text-white" href="./contact.html"><span class="material-symbols-outlined text-xl">request_quote</span><span class="text-[10px] font-bold uppercase tracking-widest">Get a Quote</span></a>
+    <a class="flex items-center justify-center px-6 py-3 text-onSurface" href="./contact.html"><span class="material-symbols-outlined text-2xl" style="color: #25D366;">chat</span></a>
+  </nav>
+
+  <script src="./script.js"></script>
+</body>
+</html>

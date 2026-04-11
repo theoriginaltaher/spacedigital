@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Digital | Get in Touch</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+  <script>
+    tailwind.config = { darkMode: "class", theme: { extend: { colors: { background: "#131318", primary: "#61dbbf", primaryContainer: "#10a38a", tertiary: "#00daf3", secondary: "#87f032", onSurface: "#e4e1e9", onSurfaceVariant: "#bccac4", outline: "#86948f", outlineVariant: "#3d4945", surfaceContainerLow: "#1b1b20", surfaceContainerHighest: "#35343a", surfaceDim: "#131318" }, fontFamily: { headline: ["Space Grotesk"], body: ["Inter"] } } } };
+  </script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="bg-background text-onSurface font-body selection:bg-primary/30" data-page="contact">
+  <nav class="fixed top-0 z-50 w-full border-b border-white/5 bg-[#131318]/80 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-8 py-5">
+      <a class="font-headline text-2xl font-bold tracking-tighter text-primary" href="./index.html">Space Digital</a>
+      <div class="hidden items-center gap-10 md:flex">
+        <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="home" href="./index.html">Home</a>
+        <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="services" href="./services.html">Services</a>
+        <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="projects" href="./projects.html">Projects</a>
+        <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="about" href="./about.html">About</a>
+        <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="contact" href="./contact.html">Contact</a>
+      </div>
+      <a class="primary-glow-btn rounded-full bg-primary px-7 py-2.5 text-sm font-bold text-[#00382e]" href="./contact.html">Get a Quote</a>
+    </div>
+  </nav>
+
+  <main class="connectivity-grid relative min-h-screen overflow-hidden pb-24 pt-32">
+    <div class="pointer-events-none absolute right-[-10%] top-[-10%] h-[500px] w-[500px] rounded-full bg-primary/5 blur-[120px]"></div>
+    <div class="pointer-events-none absolute bottom-[-5%] left-[-5%] h-[400px] w-[400px] rounded-full bg-tertiary/5 blur-[100px]"></div>
+    <div class="relative z-10 mx-auto max-w-7xl px-8">
+      <div class="mb-20"><h1 class="mb-6 font-headline text-6xl font-bold leading-none tracking-tighter md:text-8xl">Get in <span class="text-primary">Touch</span></h1><p class="max-w-xl text-lg font-light leading-relaxed text-onSurfaceVariant">Deploy world-class network infrastructure. Our digital sentinels are ready to architect your connectivity landscape.</p></div>
+      <div class="grid grid-cols-1 gap-16 lg:grid-cols-12">
+        <div class="lg:col-span-7">
+          <div class="glass-panel orbit-arc rounded-xl border border-outlineVariant/10 p-8 md:p-12">
+            <form class="space-y-10" action="#">
+              <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+                <div><label class="mb-4 block font-headline text-xs font-bold uppercase tracking-widest text-primary">Name</label><input class="w-full border-b border-outlineVariant/30 bg-transparent px-0 py-3 text-onSurface placeholder:text-outline focus:border-primary focus:outline-none" placeholder="John Doe" type="text" /></div>
+                <div><label class="mb-4 block font-headline text-xs font-bold uppercase tracking-widest text-primary">Business Type</label><select class="w-full appearance-none border-b border-outlineVariant/30 bg-transparent px-0 py-3 text-onSurface focus:border-primary focus:outline-none"><option class="bg-surfaceDim">Enterprise</option><option class="bg-surfaceDim">Government</option><option class="bg-surfaceDim">Data Center</option><option class="bg-surfaceDim">Telecom</option></select></div>
+              </div>
+              <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+                <div><label class="mb-4 block font-headline text-xs font-bold uppercase tracking-widest text-primary">Phone</label><input class="w-full border-b border-outlineVariant/30 bg-transparent px-0 py-3 text-onSurface placeholder:text-outline focus:border-primary focus:outline-none" placeholder="+94 77 000 0000" type="tel" /></div>
+                <div><label class="mb-4 block font-headline text-xs font-bold uppercase tracking-widest text-primary">Problem</label><input class="w-full border-b border-outlineVariant/30 bg-transparent px-0 py-3 text-onSurface placeholder:text-outline focus:border-primary focus:outline-none" placeholder="Latency issues, expansion..." type="text" /></div>
+              </div>
+              <div class="group flex cursor-pointer items-center gap-4 py-4"><div class="relative flex h-6 w-6 items-center justify-center rounded border border-outlineVariant transition-colors group-hover:border-primary"><input class="peer absolute h-full w-full cursor-pointer opacity-0" id="site-visit" type="checkbox" /><span class="material-symbols-outlined scale-0 text-lg text-primary transition-transform peer-checked:scale-100" style="font-variation-settings: 'FILL' 1;">check</span></div><label class="cursor-pointer font-headline text-sm font-medium text-onSurfaceVariant" for="site-visit">Request a physical site visit</label></div>
+              <button class="w-full rounded-md bg-gradient-to-r from-primary to-primaryContainer py-5 font-headline font-bold uppercase tracking-widest text-[#00382e] hover:shadow-[0_0_30px_rgba(97,219,191,0.3)]" type="submit">Initialize Connection</button>
+            </form>
+          </div>
+        </div>
+        <div class="flex flex-col gap-12 lg:col-span-5">
+          <div class="group relative overflow-hidden rounded-xl border border-outlineVariant/5 bg-surfaceContainerLow p-8"><div class="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-secondary/10 blur-3xl group-hover:bg-secondary/20"></div><div class="relative z-10 flex items-start gap-6"><div class="rounded-full bg-secondary/10 p-4 text-secondary"><span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span></div><div><h3 class="mb-2 font-headline text-xl font-bold">Live Response Agent</h3><p class="mb-6 text-sm leading-relaxed text-onSurfaceVariant">Average response time: 2 minutes. Secure, end-to-end encrypted briefing.</p><a class="inline-flex items-center gap-3 font-headline text-sm font-bold uppercase tracking-widest text-secondary hover:translate-x-2" href="#">Message via WhatsApp <span class="material-symbols-outlined text-lg">arrow_forward</span></a></div></div></div>
+          <div class="flex flex-col gap-8">
+            <div class="flex items-center gap-6"><div class="flex h-12 w-12 items-center justify-center rounded-full border border-outlineVariant/10 bg-surfaceContainerHighest text-primary"><span class="material-symbols-outlined">call</span></div><div><span class="mb-1 block font-headline text-xs font-bold uppercase tracking-widest text-outline">Inquiries</span><p class="font-headline text-xl font-medium">+94 77 555 0123</p></div></div>
+            <div class="flex items-center gap-6"><div class="flex h-12 w-12 items-center justify-center rounded-full border border-outlineVariant/10 bg-surfaceContainerHighest text-primary"><span class="material-symbols-outlined">mail</span></div><div><span class="mb-1 block font-headline text-xs font-bold uppercase tracking-widest text-outline">Liaison</span><p class="font-headline text-xl font-medium">ops@spacedigital.lk</p></div></div>
+            <div class="mt-8 border-t border-outlineVariant/10 pt-8"><span class="mb-4 block font-headline text-xs font-bold uppercase tracking-widest text-outline">Operations Center</span><div class="group relative aspect-video overflow-hidden rounded-xl"><img class="h-full w-full object-cover grayscale opacity-50 transition-all duration-700 group-hover:grayscale-0 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5atQhsQd545zU0jCy7Xo5bIrrtoSVxR4tLp2N_5p3VuPR4f7D9h5smAQFyel5zsJ-G_JLn1R4Dud9umqbKQRrQxHbT2Hm_u57V-VfVelFGnnaiV9VUH_mq1qJTxLLb6lag5ft9ql9d7Ks-JsVvJluR2iWCiSz0snmTmSTNr24B1Tqp4Qjp81YWOkFZDovYjSqjomENuLE3sWtM5u2bJQQQB7WyUzoaCHRCIbaSgmsGR4-s5FtlHx4_f7gd5yNwh6shavIhO0sdsnk" alt="Office building at night" /><div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div><div class="absolute bottom-4 left-4"><p class="rounded bg-primary/20 px-3 py-1 font-headline text-xs font-bold uppercase tracking-widest text-primary backdrop-blur-md">Colombo HQ</p></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div data-footer></div>
+
+  <nav class="fixed bottom-6 left-6 right-6 z-50 flex items-center justify-around rounded-full border border-white/10 bg-[#131318]/80 p-3 shadow-2xl backdrop-blur-2xl md:hidden">
+    <a class="flex items-center gap-2 rounded-full bg-primary px-8 py-3 text-[#00382e]" href="./contact.html"><span class="material-symbols-outlined text-xl">request_quote</span><span class="text-[10px] font-bold uppercase tracking-widest">Get a Quote</span></a>
+    <a class="flex items-center justify-center px-6 py-3 text-onSurface" href="#"><span class="material-symbols-outlined text-2xl text-secondary">chat</span></a>
+  </nav>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Digital | About</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+  <script>
+    tailwind.config = { darkMode: "class", theme: { extend: { colors: { background: "#131318", primary: "#61dbbf", primaryContainer: "#10a38a", secondary: "#87f032", tertiary: "#00daf3", onSurface: "#e4e1e9", onSurfaceVariant: "#bccac4", surfaceContainerLow: "#1b1b20", surfaceContainerLowest: "#0e0e13", surfaceContainerHigh: "#2a292f", outlineVariant: "#3d4945" }, fontFamily: { headline: ["Space Grotesk"], body: ["Inter"] } } } };
+  </script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="min-h-screen bg-background text-onSurface font-body selection:bg-primary/30" data-page="about">
+  <nav class="fixed top-0 z-50 w-full border-b border-white/5 bg-[#0e0e12]/80 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-8 py-5">
+      <a class="font-headline text-2xl font-bold tracking-tighter text-primary" href="./index.html">Space Digital</a>
+      <div class="hidden items-center gap-10 md:flex">
+        <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="home" href="./index.html">Home</a>
+        <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="services" href="./services.html">Services</a>
+        <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="projects" href="./projects.html">Projects</a>
+        <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="about" href="./about.html">About</a>
+        <a class="font-headline text-sm tracking-tight text-onSurface/70 hover:text-primary" data-nav="contact" href="./contact.html">Contact</a>
+      </div>
+      <a class="primary-glow-btn rounded-full bg-[#009F86] px-7 py-2.5 text-sm font-bold text-white" href="./contact.html">Get a Quote</a>
+    </div>
+  </nav>
+
+  <main class="relative overflow-hidden pt-32">
+    <div class="connectivity-grid-dots absolute inset-0 pointer-events-none opacity-50"></div>
+    <header class="relative z-10 mx-auto mb-32 max-w-7xl px-8">
+      <div class="grid items-end gap-12 md:grid-cols-2">
+        <div class="space-y-6"><span class="inline-block rounded-full bg-surfaceContainerHigh px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-secondary">Who We Are</span><h1 class="text-glow font-headline text-6xl font-bold leading-none tracking-tighter md:text-8xl">About <br /><span class="text-primary">Space Digital</span></h1></div>
+        <div class="pb-2"><p class="max-w-md border-l-4 border-primary/20 pl-6 text-xl font-light italic leading-relaxed text-onSurfaceVariant md:text-2xl">We don&apos;t do corporate jargon. We build the invisible architecture that keeps your world connected.</p></div>
+      </div>
+    </header>
+
+    <section class="relative z-10 mx-auto max-w-7xl px-8 py-24">
+      <div class="grid items-center gap-8 md:grid-cols-12">
+        <div class="relative aspect-[16/9] overflow-hidden rounded-2xl shadow-2xl md:col-span-7"><img class="h-full w-full object-cover grayscale transition-all duration-700 hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtCMWPe_9UhNBPwA1E5dLksLyLupt_DgRB9yU-l8jn2fbuPQTaeX6vttxkB7_9ydOYd43Pwi1RsjQRohnuANOL9QIky9pSyOOHtbmE62Ayk-ZBqZwb1_BPt5UDMMyYuktb7PzODOPuhK9cw1wUZM3jklj8b-68kNFXyRQOzrEZjB-R2kvsTtRXvWCS-dfQOcUc9Dq6iY-C5ZeuvzaeMRlKIGzizxee56Y2VB7WX2YILQWj89rGXM9eyl6fViayDfmMGcmVK_IRPlfA" alt="Server room" /><div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div></div>
+        <div class="z-20 md:-ml-12 md:col-span-5"><div class="glass-panel rounded-3xl border border-outlineVariant/10 p-10"><h2 class="mb-6 font-headline text-3xl font-bold text-primary">Simple &amp; Honest</h2><p class="mb-6 leading-relaxed text-onSurfaceVariant">Space Digital was born from a simple frustration: technology that promises the world but fails at the basics. We are a team of network architects who believe infrastructure should be felt, not seen.</p><p class="leading-relaxed text-onSurfaceVariant">We operate on honesty. If you do not need it, we will not sell it. If it is broken, we fix it right the first time. No complex contracts, just reliable connectivity for people who have better things to do than troubleshoot WiFi.</p></div></div>
+      </div>
+    </section>
+
+    <section class="relative z-10 bg-surfaceContainerLowest/50 py-24">
+      <div class="mx-auto max-w-7xl px-8">
+        <div class="mb-16"><h2 class="mb-4 font-headline text-4xl font-bold tracking-tight">Solving Real-World Connectivity</h2><div class="h-1 w-24 rounded-full bg-secondary"></div></div>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div class="rounded-3xl bg-surfaceContainerLow p-10 hover:bg-surfaceContainerHigh md:col-span-2"><span class="material-symbols-outlined mb-6 text-4xl text-primary">router</span><h3 class="mb-4 font-headline text-2xl font-bold">Core Infrastructure</h3><p class="text-lg text-onSurfaceVariant">We design and deploy high-capacity fiber and wireless backbones that serve as the foundation for modern enterprises.</p></div>
+          <div class="rounded-3xl bg-primaryContainer p-10 text-[#003027]"><span class="material-symbols-outlined mb-6 text-4xl" style="font-variation-settings: 'FILL' 1;">security</span><h3 class="mb-4 font-headline text-2xl font-bold">The Digital Shield</h3><p class="opacity-90">Advanced security protocols integrated directly into the hardware layer. Connectivity is worthless if it is not protected from the start.</p></div>
+          <div class="rounded-3xl bg-surfaceContainerLow p-10 hover:bg-surfaceContainerHigh"><span class="material-symbols-outlined mb-6 text-4xl text-tertiary">speed</span><h3 class="mb-4 font-headline text-2xl font-bold">Latency Management</h3><p class="text-onSurfaceVariant">Optimizing paths for real-time data flow in environments where every millisecond counts.</p></div>
+          <div class="group relative overflow-hidden rounded-3xl md:col-span-2"><img class="h-80 w-full scale-105 object-cover transition-transform duration-1000 group-hover:scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3zKTQTDkA2sHQ5_Zsp-VJiZpz0g-LFbcJv5xPPN323FH9Yxe__wF4THVKE92SYSbRFHEiM_CXoSczOuB6--H8wc-lC56WyIs7QKL6z0tcCH046df70KNGn26dG3B1xkeRRwLRvn3ga4zczqKmITfEQf7Rs_DUs8Z-xxYVztMmsWGnLrH2s86Z3zZ7V9b40uY6depqWx8MKZgXiQzVkEl3jVPwZwfqD6_JkeSyPDxzWoPYEGuGIFHFHILsNRCdEwkrA4emRcF2FNVY" alt="Fiber optics" /><div class="absolute inset-0 flex flex-col justify-end bg-black/60 p-10"><h3 class="mb-2 font-headline text-2xl font-bold text-white">Global Connectivity</h3><p class="max-w-md text-white/70">Bridging the gap between local networks and the global fiber grid with precision.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative z-10 mx-auto max-w-7xl px-8 py-32">
+      <div class="grid gap-12 md:grid-cols-4">
+        <div class="space-y-8"><h2 class="font-headline text-5xl font-bold leading-none tracking-tighter">Our <br /><span class="text-secondary">Approach</span></h2><p class="text-onSurfaceVariant">Four pillars that define every project we touch, from residential installs to data centers.</p></div>
+        <div class="space-y-16 md:col-span-3">
+          <div class="grid gap-12 md:grid-cols-2">
+            <div class="group relative"><div class="absolute -left-8 top-0 font-headline text-6xl font-black text-outlineVariant/10 group-hover:text-primary/10">01</div><h4 class="mb-4 flex items-center gap-3 font-headline text-xl font-bold">Clean Installs <span class="h-px flex-1 bg-outlineVariant/20"></span></h4><p class="text-onSurfaceVariant">Cable management is more than aesthetics. It is about longevity and cooling.</p></div>
+            <div class="group relative"><div class="absolute -left-8 top-0 font-headline text-6xl font-black text-outlineVariant/10 group-hover:text-primary/10">02</div><h4 class="mb-4 flex items-center gap-3 font-headline text-xl font-bold">Strategic Planning <span class="h-px flex-1 bg-outlineVariant/20"></span></h4><p class="text-onSurfaceVariant">We map out every node and signal path before the first cable is laid.</p></div>
+            <div class="group relative"><div class="absolute -left-8 top-0 font-headline text-6xl font-black text-outlineVariant/10 group-hover:text-primary/10">03</div><h4 class="mb-4 flex items-center gap-3 font-headline text-xl font-bold">Scalable Systems <span class="h-px flex-1 bg-outlineVariant/20"></span></h4><p class="text-onSurfaceVariant">Your network should grow with you. We build modular infrastructures that adapt.</p></div>
+            <div class="group relative"><div class="absolute -left-8 top-0 font-headline text-6xl font-black text-outlineVariant/10 group-hover:text-primary/10">04</div><h4 class="mb-4 flex items-center gap-3 font-headline text-xl font-bold">Persistent Support <span class="h-px flex-1 bg-outlineVariant/20"></span></h4><p class="text-onSurfaceVariant">Maintenance is not secondary. We monitor systems to catch ripples before they become waves.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative z-10 bg-surfaceContainerLowest/40 py-32">
+      <div class="mx-auto max-w-7xl px-8">
+        <div class="mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div>
+            <span class="mb-4 inline-block rounded-full bg-surfaceContainerHigh px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-secondary">Meet the Team</span>
+            <h2 class="font-headline text-4xl font-bold tracking-tight md:text-5xl">The People Behind <span class="text-primary">Space Digital</span></h2>
+          </div>
+          <p class="max-w-xl text-onSurfaceVariant">A focused team, built lean on purpose. Two operators, one standard: infrastructure that feels invisible because it simply works.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <article class="team-card glass-panel rounded-[2rem] border border-outlineVariant/10 p-5 transition-all duration-500 hover:border-primary/20 hover:bg-surfaceContainerHigh/20">
+            <div class="team-portrait aspect-[4/5] rounded-[1.5rem]">
+              <img class="team-portrait-muted" src="./assets/person-1-headshot.jpg" alt="Person 1 headshot placeholder" />
+              <img class="team-portrait-color" src="./assets/person-1-headshot.jpg" alt="Person 1 headshot" />
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+              <div class="absolute left-6 top-6 rounded-full border border-white/10 bg-background/50 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-secondary backdrop-blur-md">Founder</div>
+            </div>
+            <div class="grid gap-6 p-4 pt-8 md:grid-cols-[1.2fr_1fr]">
+              <div>
+                <h3 class="font-headline text-3xl font-bold">Person 01</h3>
+                <p class="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-primary">Co-Founder / Network Strategy</p>
+              </div>
+              <p class="text-sm leading-relaxed text-onSurfaceVariant">Placeholder bio for the first team member. Add a concise line here about leadership, planning, or infrastructure delivery.</p>
+            </div>
+          </article>
+
+          <article class="team-card glass-panel rounded-[2rem] border border-outlineVariant/10 p-5 transition-all duration-500 hover:border-primary/20 hover:bg-surfaceContainerHigh/20">
+            <div class="team-portrait aspect-[4/5] rounded-[1.5rem]">
+              <img class="team-portrait-muted" src="./assets/person-2-headshot.jpg" alt="Person 2 headshot placeholder" />
+              <img class="team-portrait-color" src="./assets/person-2-headshot.jpg" alt="Person 2 headshot" />
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+              <div class="absolute left-6 top-6 rounded-full border border-white/10 bg-background/50 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-secondary backdrop-blur-md">Operations</div>
+            </div>
+            <div class="grid gap-6 p-4 pt-8 md:grid-cols-[1.2fr_1fr]">
+              <div>
+                <h3 class="font-headline text-3xl font-bold">Person 02</h3>
+                <p class="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-primary">Co-Founder / Delivery &amp; Support</p>
+              </div>
+              <p class="text-sm leading-relaxed text-onSurfaceVariant">Placeholder bio for the second team member. Add a short description about installs, optimization, support, or client delivery.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <nav class="fixed bottom-6 left-6 right-6 z-50 flex items-center justify-around rounded-full border border-white/10 bg-[#0e0e12]/80 p-3 shadow-2xl backdrop-blur-2xl md:hidden">
+    <a class="flex items-center gap-2 rounded-full bg-primary px-8 py-3 text-white" href="./contact.html"><span class="material-symbols-outlined text-xl">request_quote</span><span class="text-[10px] font-bold uppercase tracking-widest">Get a Quote</span></a>
+    <a class="flex items-center justify-center px-6 py-3 text-onSurface" href="./contact.html"><span class="material-symbols-outlined text-2xl text-secondary">chat</span></a>
+  </nav>
+
+  <script src="./script.js"></script>
+</body>
+</html>

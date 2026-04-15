@@ -30,6 +30,64 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const contactForm = document.querySelector("[data-contact-form]");
+  const contactStatus = document.querySelector("[data-contact-status]");
+
+  if (contactForm && contactStatus) {
+    contactForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+      const formData = new FormData(contactForm);
+
+      contactStatus.className = "rounded-xl border border-primary/20 bg-primary/10 px-4 py-3 text-sm text-primary";
+      contactStatus.textContent = "Sending your request...";
+      contactStatus.classList.remove("hidden");
+
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.classList.add("opacity-70", "cursor-not-allowed");
+      }
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json"
+          }
+        });
+
+        if (!response.ok) {
+          let errorMessage = "Something went wrong while sending your message.";
+
+          try {
+            const data = await response.json();
+            if (data?.errors?.length) {
+              errorMessage = data.errors.map((error) => error.message).join(", ");
+            }
+          } catch {
+            errorMessage = "Something went wrong while sending your message.";
+          }
+
+          throw new Error(errorMessage);
+        }
+
+        contactForm.reset();
+        contactStatus.className = "rounded-xl border border-secondary/20 bg-secondary/10 px-4 py-3 text-sm text-secondary";
+        contactStatus.textContent = "Thanks. Your message has been sent successfully.";
+      } catch (error) {
+        contactStatus.className = "rounded-xl border border-red-400/20 bg-red-400/10 px-4 py-3 text-sm text-red-300";
+        contactStatus.textContent = error.message || "Something went wrong while sending your message. Please try again or contact us on WhatsApp.";
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.classList.remove("opacity-70", "cursor-not-allowed");
+        }
+      }
+    });
+  }
+
   const footerMount = document.querySelector("[data-footer]");
   if (footerMount) {
     fetch("./footer.html")
